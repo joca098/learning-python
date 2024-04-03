@@ -2,8 +2,8 @@
 Dev: Jorge Camilo Gelpud Rosero
 Script description: configure SQLite data base 
 '''
-#Import engine databse package 
-import sqlite3 
+#Import engine database package
+import sqlite3
 
 #Create a database connnection (Database name)
 con = sqlite3.connect('market.db')
@@ -17,9 +17,13 @@ user_table = '''
         id INTEGER PRIMARY KEY, 
         firstname TEXT NOT NULL,
         lastname TEXT NOT NULL,
-        ident_number TEXT UNIQUE NOT NULL,
+        ident_number TEXT  UNIQUE NOT NULL,
         email TEXT UNIQUE NOT NULL,
-        password TEXT NOT NULL
+        password TEXT NOT NULL,
+        status BOOLEAN DEFAULT true,
+        created_at TIMESTAMP DEFAULT (datetime('now','localtime')),
+        updated_at TIMESTAMP NULL,
+        deleted_at TIMESTAMP NULL
     );
 '''
 
@@ -30,3 +34,6 @@ cur.execute(user_table)
 con.commit()
 
 #print("::: Database market has been created :::")
+
+#Close connection
+#con.close()
