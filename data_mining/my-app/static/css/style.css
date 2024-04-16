@@ -1,0 +1,244 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #005f73;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px; /* Aumentado para mejor visualización */
+}
+
+footer {
+    background: #005f73;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Removido para alinear correctamente */
+    text-align: center; /* Centrado de la navegación */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Añadido para mejorar la interactividad */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+}
+
+nav ul li a:hover {
+    background-color: #0077b6; /* Efecto hover para los enlaces */
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #ffffff;
+    margin: 10px 0; /* Ajuste de márgenes para títulos */
+}
+h2 {
+    color: #000000;
+    margin: 10px 0; /* Ajuste de márgenes para títulos */
+}
+
+form label {
+    display: block;
+    margin-top: 20px;
+    color: #333; /* Color de texto para mejor contraste */
+}
+
+form input[type="text"], form input[type="email"], form input[type="number"], form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px; /* Bordes redondeados para las entradas */
+}
+
+form input[type="submit"] {
+    background: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados para el botón */
+}
+
+form input[type="submit"]:hover {
+    background: #023e8a;
+}
+.btn {
+    display: inline-block;
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #023e8a;
+}
+.results-container {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+}
+
+.prediction-result {
+    color: #d35400; /* Un color llamativo */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Hacer el texto más grueso */
+    margin: 20px 0; /* Añadir espacio antes y después del resultado */
+}
+
+.prediction-result span {
+    background-color: #f4f4f4; /* Fondo para resaltar el resultado */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados para el fondo */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera para profundidad */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #023e8a;
+}
+
+.form-container {
+    text-align: center;
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo del viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    justify-content: center; /* Centra los elementos hijos verticalmente */
+    padding: 20px;
+}
+
+
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 90%; /* Ajusta según la anchura deseada del formulario */
+    max-width: 500px; /* Un máximo para que no se vea demasiado grande en pantallas grandes */
+    margin: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+    text-align: left; /* Asegura que las etiquetas estén alineadas a la izquierda */
+}
+
+form input[type="text"], form input[type="email"], form input[type="number"], form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+form input[type="submit"] {
+    width: 100%; /* Hace que el botón de enviar ocupe todo el ancho del formulario */
+    padding: 10px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #023e8a;
+}
+
+.results-container {
+    text-align: center; 
+    width: 100%; 
+    max-width: 800px; 
+    margin: auto; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.analysis-section h3 {
+    margin-top: 20px; 
+    color: #005f73; 
+}
+
+.analysis-section p {
+    text-align: justify; 
+    margin-bottom: 20px; 
+}
+.image-container {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+.image-container img {
+    width: 100%; 
+    max-width: 1000px; 
+    height: auto; /
+}
+.home-content {
+    text-align: center; 
+    width: 100%; 
+    margin: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px; 
+}
+
+.btn {
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    background-color: #0077b6; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: #023e8a; 
+}

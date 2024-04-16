@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Inicio{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Análisis exploratorio para la identificación de patrones de la dataset: Votaciones del Congreso de EE. UU. de 1984 y su Paralelo en el Gobierno Escolar al votar por su representante de grupo utilizando metodología CRISP-DM
+            
+            </h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='img/img2.png') }}" alt="Descripción de la imagen">
+    </div>
+    <main>
+        {% block content %}
+        <!-- El contenido dinámico irá aquí -->
+        {% endblock %}
+    </main>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='img/img1.png') }}" alt="Descripción de la imagen">
+    </div>
+    <footer>
+        <p>Desarrollado por tu Bacca M. Edwin F, Gelpud R. Jorge C, Estudiantes Diplomado de inteligencia Computacional.</p>
+        <p> UNIVERSIDAD DE NARIÑO - 
+            UNIVERSIDAD CESMAG </p> 
+            edwinfbaccam@gmail.com
+            camilo_098@hotmail.com
+    </footer>
+</body>
+</html>
+
+

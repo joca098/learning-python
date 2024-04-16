@@ -1,0 +1,104 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="form-container">
+    <h2>Por favor completa el formulario para la predicción</h2>
+    <form action="/procesar" method="post">
+    <label for="disability_babies">Bebés discapacitados (s/n):</label>
+    <select id="disability_babies" name="disability_babies">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+
+    <label for="water_project_cost_sharing">Costo compartido del proyecto de agua (s/n):</label>
+    <select id="water_project_cost_sharing" name="water_project_cost_sharing">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+
+    <label for="budget_resolution_adoptation">Adopción de la resolución presupuestaria (s/n):</label>
+    <select id="budget_resolution_adoptation" name="budget_resolution_adoptation">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+
+    <label for="medical_fees_freezing">Congelación de honorarios médicos (s/n):</label>
+    <select id="medical_fees_freezing" name="medical_fees_freezing">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+
+    <label for="aid_el_salvador">Ayuda a El Salvador (s/n):</label>
+    <select id="aid_el_salvador" name="aid_el_salvador">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+
+    <label for="religious_groups_in_schools">Grupos religiosos en escuelas (s/n):</label>
+    <select id="religious_groups_in_schools" name="religious_groups_in_schools">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+
+    <label for="anti_satellite_test_ban">Prohibición de pruebas antisatélites (s/n):</label>
+    <select id="anti_satellite_test_ban" name="anti_satellite_test_ban">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+
+    <label for="aid_nicaraguan_contras">Ayuda a los contras nicaragüenses (s/n):</label>
+    <select id="aid_nicaraguan_contras" name="aid_nicaraguan_contras">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+    <label for="missile_mx">Misil MX (s/n):</label>
+    <select id="missile_mx" name="missile_mx">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+    
+    <label for="immigration">Inmigración (s/n):</label>
+    <select id="immigration" name="immigration">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+    
+    <label for="synfuels_corporation_cutback">Recorte de corporaciones de combustibles sintéticos (s/n):</label>
+    <select id="synfuels_corporation_cutback" name="synfuels_corporation_cutback">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+    
+    <label for="education_spending">Gasto en educación (s/n):</label>
+    <select id="education_spending" name="education_spending">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+    
+    <label for="superfund_right_to_sue">Derecho a demandar del Superfondo (s/n):</label>
+    <select id="superfund_right_to_sue" name="superfund_right_to_sue">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+    
+    <label for="crime">Delincuencia (s/n):</label>
+    <select id="crime" name="crime">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+    
+    <label for="duty_free_exports">Exportaciones libres de impuestos (s/n):</label>
+    <select id="duty_free_exports" name="duty_free_exports">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+    
+    <label for="export_administration_act_south_africa">Ley de Administración de Exportaciones a Sudáfrica (s/n):</label>
+    <select id="export_administration_act_south_africa" name="export_administration_act_south_africa">
+        <option value="s">Sí</option>
+        <option value="n">No</option>
+    </select>
+
+    <input type="submit" value="Enviar">
+</form>
+{% endblock %}
